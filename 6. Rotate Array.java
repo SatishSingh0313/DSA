@@ -1,5 +1,6 @@
 package day2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //Rotate Array
@@ -52,7 +53,17 @@ class Solution {
         }
     }
     public static void main(String[] args) {
-		
-	}
+        Solution solution = new Solution();
+        
+        int[] nums1 = {1, 2, 3, 4, 5, 6, 7};
+        int k1 = 3;
+        solution.rotate(nums1, k1);
+        System.out.println("Rotated array for nums1: " + Arrays.toString(nums1));
+
+        int[] nums2 = {-1, -100, 3, 99};
+        int k2 = 2;
+        solution.rotate(nums2, k2);
+        System.out.println("Rotated array for nums2: " + Arrays.toString(nums2));
+    }
 }
 
